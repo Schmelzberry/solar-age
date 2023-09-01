@@ -8,10 +8,10 @@ describe('earthAge', () => {
     expect(exampleAge.age).toEqual(number);
   });
 
-  test('should correctly return a number multiplied by .24', () => {
-    let mercuryNumber = Number;
-    const exampleAge = new Age(mercuryNumber);
-    expect(exampleAge.mercury).toEqual(mercuryNumber * .24);
+  test('should correctly return age multiplied by .24 stored in its own key', () => {
+    let number = Number;
+    const exampleAge = new Age(number);
+    expect(exampleAge.mercury).toEqual(exampleAge.age * .24);
   });
 
 
