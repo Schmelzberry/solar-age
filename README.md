@@ -34,16 +34,27 @@
 A solar age calculator
 ## Setup/Installation Requirements
 
-* Installing all packages with $ npm install.
-* Building the project using webpack with $ npm run build
-* Starting a development server with $ npm run start
-* Linting JS files in the src folder with $ npm run lint
-* Running tests with Jest using $ npm run test
+1. Copy the **[URL](https://github.com/Schmelzberry/za-bros.git)** provided for this repository.
+2. Open Terminal.
+3. Change your working directory to where you want the cloned directory.
+4. In your terminal, type `git clone` and use the copied URL from Step 1. Or, copy the following git command:
+```bash
+git clone https://github.com/Schmelzberry/solar-age
+```
+5. Navigate to the top level of the newly cloned directory.
+
+6. Install all necessary packages: $ npm install.
+
+7. Build the project using webpack: $ npm run build
+
+8. Start a development server: $ npm run start
+
+9. Running tests with Jest: $ npm run test
+
+10. Lint JS files in the src folder: $ npm run lint
+
 
 ## Known Bugs
-
-* _Any known issues_
-* _should go here_
 
 ## License
 
