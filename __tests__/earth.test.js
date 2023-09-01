@@ -38,24 +38,24 @@ describe('earthAge', () => {
     let currentMinusTargetAge = currentAge - pastDate;
     const exampleAge = new Age(currentAge);
     const newAges = exampleAge.yearsPassed(pastDate);
-    const expectedMercuryAge = currentMinusTargetAge * 0.24;
-    const expectedVenusAge = currentMinusTargetAge * 0.62;
-    const expectedMarsAge = currentMinusTargetAge * 1.88;
-    const expectedJupiterAge = currentMinusTargetAge * 11.86;
-    expect(newAges).toEqual([currentAge, expectedMercuryAge, expectedVenusAge, expectedMarsAge, expectedJupiterAge]);
+    const pastMercuryAge = currentMinusTargetAge * 0.24;
+    const pastVenusAge = currentMinusTargetAge * 0.62;
+    const pastMarsAge = currentMinusTargetAge * 1.88;
+    const pastJupiterAge = currentMinusTargetAge * 11.86;
+    expect(newAges).toEqual([currentMinusTargetAge, pastMercuryAge, pastVenusAge, pastMarsAge, pastJupiterAge]);
   });
 
   test('should determine how many years have passed on each planet given a future birthday', () => {
-    let currentAge = 20; 
-    let pastDate = 10;
-    let currentMinusTargetAge = currentAge + pastDate;
-    const exampleAge = new Age(currentAge);
-    const newAges = exampleAge.yearsUntil(pastDate);
-    const expectedMercuryAge = currentMinusTargetAge * 0.24;
-    const expectedVenusAge = currentMinusTargetAge * 0.62;
-    const expectedMarsAge = currentMinusTargetAge * 1.88;
-    const expectedJupiterAge = currentMinusTargetAge * 11.86;
-    expect(newAges).toEqual([currentAge, expectedMercuryAge, expectedVenusAge, expectedMarsAge, expectedJupiterAge]);
+    let currentAge2 = 30; 
+    let futureDate = 10;
+    let currentPlusTargetAge = currentAge2 + futureDate;
+    const exampleAge = new Age(currentAge2);
+    const newAges = exampleAge.yearsUntil(futureDate);
+    const futureMercuryAge = currentPlusTargetAge * 0.24;
+    const futureVenusAge = currentPlusTargetAge * 0.62;
+    const futureMarsAge = currentPlusTargetAge * 1.88;
+    const futureJupiterAge = currentPlusTargetAge * 11.86;
+    expect(newAges).toEqual([currentPlusTargetAge, futureMercuryAge, futureVenusAge, futureMarsAge, futureJupiterAge]);
   });
 
 
