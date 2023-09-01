@@ -18,11 +18,11 @@ export default class Age {
   }
   yearsUntil(futureDate) {
     futureDate = Number(futureDate);
-    let agePlusDate = (futureDate - this.age);
-    this.mercury = agePlusDate * .24;
-    this.venus = agePlusDate * .62;
-    this.mars = agePlusDate * 1.88;
-    this.jupiter = agePlusDate *  11.86;
-    return [agePlusDate, this.mercury, this.venus, this.mars, this.jupiter];
+    let howLong = (futureDate - this.age);
+    this.mercury = howLong * .24;
+    this.venus = howLong * .62;
+    this.mars = howLong * 1.88;
+    this.jupiter = howLong *  11.86;
+    return [howLong, this.mercury, this.venus, this.mars, this.jupiter];
   }
 } 

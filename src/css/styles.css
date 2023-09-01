@@ -1,4 +1,7 @@
-
 body {
   background-color: lightblue;
+}
+
+.hidden {
+  display: none;
 }
