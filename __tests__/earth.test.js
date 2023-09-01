@@ -26,6 +26,12 @@ describe('earthAge', () => {
     expect(exampleAge.mars).toEqual(exampleAge.age * 1.88);
   });
 
+  test('should correctly return age multiplied by 11.86 stored in its own key', () => {
+    let number = Number;
+    const exampleAge = new Age(number);
+    expect(exampleAge.jupiter).toEqual(exampleAge.age * 11.86);
+  });
+
 
 });
 
