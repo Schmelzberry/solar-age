@@ -1,5 +1,5 @@
 import Age from './../src/earth.js';
-
+// DRY up this suite with a beforeEach function //
 describe('earthAge', () => {
 
   test('should return a number', () => {
@@ -18,6 +18,12 @@ describe('earthAge', () => {
     let number = Number;
     const exampleAge = new Age(number);
     expect(exampleAge.venus).toEqual(exampleAge.age * .62);
+  });
+
+  test('should correctly return age multiplied by 1.88 stored in its own key', () => {
+    let number = Number;
+    const exampleAge = new Age(number);
+    expect(exampleAge.mars).toEqual(exampleAge.age * 1.88);
   });
 
 
