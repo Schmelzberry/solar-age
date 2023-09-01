@@ -18,7 +18,7 @@ export default class Age {
   }
   yearsUntil(futureDate) {
     futureDate = Number(futureDate);
-    let agePlusDate = (this.age + futureDate);
+    let agePlusDate = (futureDate - this.age);
     this.mercury = agePlusDate * .24;
     this.venus = agePlusDate * .62;
     this.mars = agePlusDate * 1.88;
