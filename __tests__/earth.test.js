@@ -35,9 +35,22 @@ describe('earthAge', () => {
   test('should determine how many years have passed on each planet since a past birthday', () => {
     let currentAge = 20; 
     let pastDate = 10;
-    let currentMinusTargetAge = 10;
+    let currentMinusTargetAge = currentAge - pastDate;
     const exampleAge = new Age(currentAge);
     const newAges = exampleAge.yearsPassed(pastDate);
+    const expectedMercuryAge = currentMinusTargetAge * 0.24;
+    const expectedVenusAge = currentMinusTargetAge * 0.62;
+    const expectedMarsAge = currentMinusTargetAge * 1.88;
+    const expectedJupiterAge = currentMinusTargetAge * 11.86;
+    expect(newAges).toEqual([currentAge, expectedMercuryAge, expectedVenusAge, expectedMarsAge, expectedJupiterAge]);
+  });
+
+  test('should determine how many years have passed on each planet given a future birthday', () => {
+    let currentAge = 20; 
+    let pastDate = 10;
+    let currentMinusTargetAge = currentAge + pastDate;
+    const exampleAge = new Age(currentAge);
+    const newAges = exampleAge.yearsUntil(pastDate);
     const expectedMercuryAge = currentMinusTargetAge * 0.24;
     const expectedVenusAge = currentMinusTargetAge * 0.62;
     const expectedMarsAge = currentMinusTargetAge * 1.88;

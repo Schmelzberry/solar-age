@@ -16,4 +16,6 @@ export default class Age {
     return [this.age, this.mercury, this.venus, this.mars, this.jupiter];
 
   }
+  yearsUntil() {
+  }
 } 
