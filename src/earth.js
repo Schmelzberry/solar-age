@@ -1,10 +1,10 @@
 export default class Age {
  constructor(age) {
   this.age=age;
-  this.mercury= this.age * .24;
-  this.venus= this.age * .62;
-  this.mars= this.age * 1.88;
-  this.jupiter= this.age * 11.86;
+  this.mercury= 0;
+  this.venus= 0;
+  this.mars= 0;
+  this.jupiter= 0;
   }
   yearsPassed(pastDate) {
     pastDate = Number(pastDate);
