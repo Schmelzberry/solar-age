@@ -33,7 +33,7 @@ describe('earthAge', () => {
     let number = 1;
     const exampleAge = new Age(number);
     exampleAge.jupiter();
-    expect(exampleAge.jupiter).toEqual(11.86);
+    expect(exampleAge.jupiterAge).toEqual(11.86);
   });
 
   test('should determine how many years have passed on each planet since a past birthday', () => {

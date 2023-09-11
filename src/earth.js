@@ -23,7 +23,8 @@ export default class Age {
    }
 
    jupiter() {
-    
+    this.jupiterAge = this.age * 11.86;
+    return this.jupiterAge;
    }
 
 
