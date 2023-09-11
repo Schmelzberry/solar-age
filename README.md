@@ -43,15 +43,15 @@ git clone https://github.com/Schmelzberry/solar-age
 ```
 5. Navigate to the top level of the newly cloned directory.
 
-6. Install all necessary packages: $ npm install.
+6. Install all necessary packages: `$ npm install`
 
-7. Build the project using webpack: $ npm run build
+7. Build the project using webpack: `$ npm run build`
 
-8. Start a development server: $ npm run start
+8. Start a development server: `$ npm run start`
 
-9. Running tests with Jest: $ npm run test
+9. Running tests with Jest: `$ npm run test`
 
-10. Lint JS files in the src folder: $ npm run lint
+10. Lint JS files in the src folder: $ `npm run lint`
 
 
 ## Known Bugs
