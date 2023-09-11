@@ -8,12 +8,13 @@ export default class Age {
   }
 
   mercury() {
-    this.mercuryAge = this.age * .24
+    this.mercuryAge = this.age * .24;
     return this.mercuryAge;
   }
 
   venus() {
-    
+    this.venusAge = this.age * .62;
+    return this.venusAge;
    }
 
   yearsPassed(pastDate) {
