@@ -6,6 +6,7 @@ export default class Age {
   this.mars= 0;
   this.jupiter= 0;
   }
+
   yearsPassed(pastDate) {
     pastDate = Number(pastDate);
     let ageMinusDate = (this.age - pastDate);
