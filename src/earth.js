@@ -22,6 +22,11 @@ export default class Age {
     return this.marsAge;
    }
 
+   jupiter() {
+    
+   }
+
+
   yearsPassed(pastDate) {
     pastDate = Number(pastDate);
     let ageMinusDate = (this.age - pastDate);

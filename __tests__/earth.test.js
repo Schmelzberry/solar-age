@@ -29,12 +29,12 @@ describe('earthAge', () => {
     expect(exampleAge.marsAge).toEqual(1.88);
   });
 
-  // test('should correctly return age multiplied by 11.86 stored in its own key', () => {
-  //   let number = 1;
-  //   const exampleAge = new Age(number);
-  //   exampleAge.jupiter = 
-  //   expect(exampleAge.jupiter * 11.86).toEqual(11.86);
-  // });
+  test('should correctly return age multiplied by 11.86 stored in its own key', () => {
+    let number = 1;
+    const exampleAge = new Age(number);
+    exampleAge.jupiter();
+    expect(exampleAge.jupiter).toEqual(11.86);
+  });
 
   test('should determine how many years have passed on each planet since a past birthday', () => {
     let currentAge = 50; 
