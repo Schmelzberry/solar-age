@@ -15,11 +15,12 @@ describe('earthAge', () => {
     expect(exampleAge.mercuryAge).toEqual(.24);
   });
 
-  // test('should correctly return age multiplied by .62 stored in its own key', () => {
-  //   let number = 1;
-  //   const exampleAge = new Age(number);
-  //   expect(exampleAge.venus).toEqual(.62);
-  // });
+  test('should correctly return age multiplied by .62 stored in venus key of constructor', () => {
+    let number = 1;
+    const exampleAge = new Age(number);
+    exampleAge.venus();
+    expect(exampleAge.venusAge).toEqual(.62);
+  });
 
   // test('should correctly return age multiplied by 1.88 stored in its own key', () => {
   //   let number = 1;
