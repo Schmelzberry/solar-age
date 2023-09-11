@@ -3,15 +3,16 @@ import Age from './../src/earth.js';
 describe('earthAge', () => {
 
   test('should return a number', () => {
-    let number = 0;
+    let number = 1;
     const exampleAge = new Age(number);
-    expect(exampleAge.age).toEqual(0);
+    expect(exampleAge.age).toEqual(1);
   });
 
   test('should correctly return age multiplied by .24, stored in mercury key of constructor', () => {
     let number = 1;
     const exampleAge = new Age(number);
-    expect(mercury(exampleAge)).toEqual(.24);
+    exampleAge.mercury();
+    expect(exampleAge.mercuryAge).toEqual(.24);
   });
 
   // test('should correctly return age multiplied by .62 stored in its own key', () => {

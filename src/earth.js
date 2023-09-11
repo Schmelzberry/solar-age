@@ -1,14 +1,15 @@
 export default class Age {
  constructor(age) {
   this.age=age;
-  this.mercury= 0;
-  this.venus= 0;
-  this.mars= 0;
-  this.jupiter= 0;
+  this.mercuryAge= 0;
+  this.venusAge= 0;
+  this.marsAge= 0;
+  this.jupiterAge= 0;
   }
 
-  mercury(age) {
-    return;
+  mercury() {
+    this.mercuryAge = this.age * .24
+    return this.mercuryAge;
   }
 
   yearsPassed(pastDate) {
