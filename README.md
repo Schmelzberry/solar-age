@@ -10,7 +10,7 @@
 * CSS
 * JavaScript
 * Bootstrap - 5.3.1
-* Node.js - v18.17.1
+* Node.js - 18.17.1
 * Node Package Manager - v9.8.1
 * Webpack - 5.88.2
 * Babel - 7.22.11
