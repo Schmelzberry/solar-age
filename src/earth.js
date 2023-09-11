@@ -36,14 +36,13 @@ export default class Age {
     return [ageMinusDate, this.mercuryAge, this.venusAge, this.marsAge, this.jupiterAge];
 
   }
-  // yearsUntil(futureDate) {
-  //   futureDate = Number(futureDate);
-  //   let howLong = (futureDate - this.age);
-  //   this.mercury = howLong * .24;
-  //   this.venus = howLong * .62;
-  //   this.mars = howLong * 1.88;
-  //   this.jupiter = howLong *  11.86;
-  //   return [howLong, this.mercury, this.venus, this.mars, this.jupiter];
-  // }
+  yearsUntil(futureDate) {
+    let howLong = (futureDate - this.age);
+    this.mercuryAge = howLong * .24;
+    this.venusAge = howLong * .62;
+    this.marsAge = howLong * 1.88;
+    this.jupiterAge = howLong *  11.86;
+    return [howLong, this.mercuryAge, this.venusAge, this.marsAge, this.jupiterAge];
+  }
 } 
   
