@@ -17,6 +17,10 @@ export default class Age {
     return this.venusAge;
    }
 
+   mars() {
+ 
+   }
+
   yearsPassed(pastDate) {
     pastDate = Number(pastDate);
     let ageMinusDate = (this.age - pastDate);
