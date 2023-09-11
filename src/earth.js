@@ -18,7 +18,8 @@ export default class Age {
    }
 
    mars() {
- 
+    this.marsAge = this.age * 1.88;
+    return this.marsAge;
    }
 
   yearsPassed(pastDate) {
