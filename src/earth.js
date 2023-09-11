@@ -27,25 +27,23 @@ export default class Age {
     return this.jupiterAge;
    }
 
+  yearsPassed(pastDate) {
+    let ageMinusDate = (this.age - pastDate);
+    this.mercuryAge = ageMinusDate * .24;
+    this.venusAge = ageMinusDate * .62;
+    this.marsAge = ageMinusDate * 1.88;
+    this.jupiterAge = ageMinusDate *  11.86;
+    return [ageMinusDate, this.mercuryAge, this.venusAge, this.marsAge, this.jupiterAge];
 
-//   yearsPassed(pastDate) {
-//     pastDate = Number(pastDate);
-//     let ageMinusDate = (this.age - pastDate);
-//     this.mercury = ageMinusDate * .24;
-//     this.venus = ageMinusDate * .62;
-//     this.mars = ageMinusDate * 1.88;
-//     this.jupiter = ageMinusDate *  11.86;
-//     return [ageMinusDate, this.mercury, this.venus, this.mars, this.jupiter];
-
-//   }
-//   yearsUntil(futureDate) {
-//     futureDate = Number(futureDate);
-//     let howLong = (futureDate - this.age);
-//     this.mercury = howLong * .24;
-//     this.venus = howLong * .62;
-//     this.mars = howLong * 1.88;
-//     this.jupiter = howLong *  11.86;
-//     return [howLong, this.mercury, this.venus, this.mars, this.jupiter];
-//   }
-// } 
   }
+  // yearsUntil(futureDate) {
+  //   futureDate = Number(futureDate);
+  //   let howLong = (futureDate - this.age);
+  //   this.mercury = howLong * .24;
+  //   this.venus = howLong * .62;
+  //   this.mars = howLong * 1.88;
+  //   this.jupiter = howLong *  11.86;
+  //   return [howLong, this.mercury, this.venus, this.mars, this.jupiter];
+  // }
+} 
+  
